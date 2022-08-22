@@ -1,0 +1,240 @@
+/* font  */
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova:ital@0;1&family=Open+Sans:ital,wght@0,300;0,700;1,400&display=swap");
+
+/* universal style  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+}
+
+.header {
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+}
+.underline-list {
+  display: flex;
+  justify-content: end;
+  /* background-color: rgb(222, 26, 59); */
+  height: 45px;
+  align-items: center;
+  position: relative;
+}
+
+.navbar {
+  position: sticky;
+}
+
+.nav-list {
+  padding: 0 40px;
+}
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  /* transition: color 0.2 ease-in-out 5; */
+  /* transition-timing-function: linear; */
+}
+
+.nav-list a:hover {
+  color: rgb(234, 15, 52);
+  border-bottom: 3px solid white;
+}
+.underline-list li {
+  list-style: none;
+  cursor: pointer;
+}
+.underline-list {
+  padding-right: 200px;
+}
+.protofolio {
+  position: absolute;
+  top: 6px;
+  color: rgb(232, 22, 57);
+  font-size: 150%;
+  padding-left: 60px;
+  font-weight: bold;
+}
+.protofolio span {
+  font-size: 100%;
+  color: green;
+}
+
+/* **********heading section************ */
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 200px;
+  color: white;
+  height: 60vh;
+}
+
+.btn {
+  width: 100px;
+  background-color: #ff477e;
+  border-radius: 7px;
+  color: black;
+  font-weight: 900;
+  /* border: 2px solid green; */
+  padding: 5px 13px;
+}
+
+.btn:hover {
+  background-color: hsl(350, 94%, 49%);
+}
+
+.section-heading img {
+  height: 500px;
+  width: 600px;
+  position: absolute;
+  right: 10px;
+  top: -160px;
+  overflow: hidden;
+}
+
+.title-name,
+.title-job,
+.btn {
+  position: relative;
+  left: 200px;
+}
+.btn {
+  left: 350px;
+}
+
+.title-job,
+.title-name {
+  font-size: 300%;
+  font-weight: 600;
+}
+
+.unordered-list-title {
+  position: relative;
+  top: -70px;
+  left: 100px;
+}
+.unordered-list-title li {
+  list-style: none;
+}
+
+.unordered-list-title li span {
+  font-size: 51px;
+}
+.unordered-list-title li span {
+  position: relative;
+}
+/* ************dynamic typing*********** */
+
+.unordered-list-title li span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  border-left: 2px solid white;
+  background: black;
+  animation: typing 1.5s steps(8) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+/* **********about me*********** */
+.section-about-me {
+  background: #cdcfcd;
+  overflow: hidden;
+  height: 87vh;
+}
+.about-me {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 150%;
+}
+.who-am-i {
+  text-align: center;
+}
+.line {
+  background-color: red;
+  height: 3px;
+  width: 60px;
+}
+.line-left {
+  position: relative;
+  top: 15px;
+  left: 570px;
+}
+
+.line-right {
+  position: relative;
+  top: -12px;
+  left: 720px;
+}
+
+.about-content img {
+  width: 500px;
+  height: 500px;
+}
+
+.content {
+  width: 40%;
+}
+
+.content-container {
+  position: relative;
+  top: -400px;
+  left: 700px;
+}
+
+.button {
+  position: relative;
+  left: 150px;
+  margin-top: 80px;
+  padding: 7px 17px;
+  background: #ff477e;
+  color: white;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: hsl(350, 94%, 49%);
+}
+
+/* **************gallery****************** */
+.my-gallery {
+  height: 90vh;
+  background: #cdcfcd;
+}
+
+.gallery-container img {
+  display: block;
+  height: 400px;
+  text-align: center;
+  margin: auto;
+}
+
+.left-icon {
+  position: relative;
+  top: 200px;
+  left: 300px;
+  background: #ff477e;
+  width: 20px;
+}
+
+.right-icon {
+  position: relative;
+  top: -300px;
+  left: 1000px;
+  background: #ff477e;
+  color: black;
+  width: 20px;
+}
+.my-gallery {
+  padding-top: 66px;
+}
